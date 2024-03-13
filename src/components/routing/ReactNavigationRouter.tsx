@@ -21,10 +21,10 @@ export default function ReactNavigationRouter() {
           name="Reminders"
           component={RemindersScreen}
           options={{
-            headerTitle: () => (
+            headerTitle: ({ tintColor }) => (
               <HeaderTitle
                 title="Reminders"
-                Icon={<FontAwesome name="bell" size={24} color={"blue"} />}
+                Icon={<FontAwesome name="bell" size={24} color={"#2089dc"} />}
               />
             ),
             tabBarIcon: ({ focused, color, size }) => (
@@ -45,7 +45,7 @@ export default function ReactNavigationRouter() {
               <HeaderTitle
                 title="Profile"
                 Icon={
-                  <FontAwesome name="user-circle" size={24} color={"blue"} />
+                  <FontAwesome name="user-circle" size={24} color={"#2089dc"} />
                 }
               />
             ),

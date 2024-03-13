@@ -6,7 +6,7 @@ export const theme = createTheme({
       iconType: "material-community",
       checkedIcon: "checkbox-marked",
       uncheckedIcon: "checkbox-blank-outline",
-      checkedColor: "blue",
+      checkedColor: "#2089dc",
     },
   },
 });

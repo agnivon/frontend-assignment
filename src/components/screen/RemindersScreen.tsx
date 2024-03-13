@@ -151,7 +151,7 @@ export default function RemindersScreen(_props: RemindersScreenProps) {
               size="sm"
               style={{ padding: 0, margin: 0 }}
             >
-              <AntDesign color="blue" name="clockcircle" size={30} />
+              <AntDesign color="#2089dc" name="clockcircle" size={30} />
             </Button>
           </Stack>
         </Stack>

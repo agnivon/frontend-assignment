@@ -1,5 +1,3 @@
-import { FontAwesome } from "@expo/vector-icons";
-import { IconProps } from "@rneui/base";
 import React from "react";
 import { Text, View } from "react-native";
 
@@ -25,7 +23,7 @@ export default function HeaderTitle({
           fontSize: 20,
           marginTop: 0,
           fontWeight: "600",
-          color: "blue",
+          color: "#2089dc",
         }}
       >
         {title}
