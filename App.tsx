@@ -3,19 +3,22 @@ import { theme } from "@/theme";
 import { isWeb } from "@/utils";
 import { ThemeProvider } from "@rneui/themed";
 import { StyleSheet, View } from "react-native";
+import { ToastProvider } from "react-native-toast-notifications";
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      {isWeb() ? (
-        <View style={styles.container}>
-          <View style={{ flex: 1, width: 400 }}>
-            <ReactNavigationRouter />
+      <ToastProvider placement="top">
+        {isWeb() ? (
+          <View style={styles.container}>
+            <View style={{ flex: 1, width: 400 }}>
+              <ReactNavigationRouter />
+            </View>
           </View>
-        </View>
-      ) : (
-        <ReactNavigationRouter />
-      )}
+        ) : (
+          <ReactNavigationRouter />
+        )}
+      </ToastProvider>
     </ThemeProvider>
   );
 }

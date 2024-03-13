@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     shadowRadius: 1.41,
 
     elevation: 2,
-    marginBottom: 20
+    marginBottom: 20,
   },
   icon: {
     marginRight: 5,
