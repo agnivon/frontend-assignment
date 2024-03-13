@@ -76,6 +76,7 @@ export default function PersonalInfoForm() {
           value={values.fullName.value}
           onChangeText={handleChange("personalInfo.fullName.value")}
           onBlur={handleBlur("personalInfo.fullName.value")}
+          placeholder="Alexandra Johnson"
         />
       </Stack>
 
@@ -99,6 +100,9 @@ export default function PersonalInfoForm() {
           value={values.age.value}
           onChangeText={handleChange("personalInfo.age.value")}
           onBlur={handleBlur("personalInfo.age.value")}
+          inputMode="numeric"
+          keyboardType="number-pad"
+          placeholder="20"
         />
       </Stack>
 
@@ -245,8 +249,9 @@ export default function PersonalInfoForm() {
           editable
           multiline
           numberOfLines={4}
-          maxLength={100}
+          maxLength={500}
           style={{ alignSelf: "stretch" }}
+          placeholder="I'm an aspiring writer with a deep passion for storytelling."
         />
       </Stack>
     </Stack>

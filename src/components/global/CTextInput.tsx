@@ -5,10 +5,11 @@ export default function CTextInput(props: TextInputProps) {
   return (
     <TextInput
       style={[
-        { borderWidth: 1, margin: 0, borderRadius: 5 },
+        { borderWidth: 1, margin: 0, borderRadius: 5, padding: 5 },
         { width: "100%" },
         style,
       ]}
+      placeholderTextColor={"gray"}
       {...rest}
     />
   );

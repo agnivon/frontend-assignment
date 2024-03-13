@@ -4,7 +4,7 @@ import { GestureResponderEvent } from "react-native";
 export default function HideEye({
   hidden,
   onPress,
-  size = 22,
+  size = 24,
 }: {
   hidden: boolean;
   onPress?: (event: GestureResponderEvent) => void;

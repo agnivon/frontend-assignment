@@ -1,8 +1,7 @@
 import Stack from "@/components/global/Stack";
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Image } from "@rneui/themed";
-import { ActivityIndicator, StyleSheet, Text } from "react-native";
-
+import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
 
 export default function ProfileHeader() {
   return (
@@ -11,20 +10,26 @@ export default function ProfileHeader() {
         flexDirection: "row",
         width: "100%",
         justifyContent: "flex-start",
-        marginVertical: 30,
+        marginVertical: 20,
         gap: 20,
-        alignContent: "center"
+        alignContent: "center",
       }}
     >
       <Image
         source={{ uri: "https://source.unsplash.com/random?sig=1" }}
         containerStyle={styles.image}
-        PlaceholderContent={<ActivityIndicator />}
+        PlaceholderContent={
+          <ActivityIndicator style={{ width: 60, height: 60 }} />
+        }
       />
       <Stack style={{ gap: 2, alignItems: "flex-start" }}>
-        <Text style={{ fontSize: 20, fontWeight: "600" }}>Siddhi's Space</Text>
+        <Text style={{ fontSize: 20, fontWeight: "600" }}>Alexandra's Space</Text>
         <Stack style={{ flexDirection: "row", gap: 2 }}>
-          <MaterialCommunityIcons name="star-shooting" size={26} color="orange" />
+          <MaterialCommunityIcons
+            name="star-shooting"
+            size={26}
+            color="orange"
+          />
           <Text style={{ fontSize: 20 }}>100</Text>
         </Stack>
       </Stack>

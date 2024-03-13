@@ -23,6 +23,7 @@ export default function EducationInfoForm() {
           value={values.course.value}
           onChangeText={handleChange("educationInfo.course.value")}
           onBlur={handleBlur("educationInfo.course.value")}
+          placeholder="Photography"
         />
       </Stack>
       <Stack>
@@ -31,6 +32,7 @@ export default function EducationInfoForm() {
           value={values.college.value}
           onChangeText={handleChange("educationInfo.college.value")}
           onBlur={handleBlur("educationInfo.college.value")}
+          placeholder="Rhode Island School of Design"
         />
       </Stack>
       <Stack>
@@ -57,6 +59,7 @@ export default function EducationInfoForm() {
                           containerStyle={{
                             width: index === 0 ? "100%" : "90%",
                           }}
+                          placeholder="Status..."
                         />
                         {index > 0 && (
                           <FontAwesome

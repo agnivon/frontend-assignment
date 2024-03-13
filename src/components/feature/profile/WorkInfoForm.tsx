@@ -23,6 +23,7 @@ export default function WorkInfoForm() {
           value={values.designation.value}
           onChangeText={handleChange("workInfo.designation.value")}
           onBlur={handleBlur("workInfo.designation.value")}
+          placeholder="Senior Photographer"
         />
       </Stack>
       <Stack>
@@ -31,6 +32,7 @@ export default function WorkInfoForm() {
           value={values.company.value}
           onChangeText={handleChange("workInfo.company.value")}
           onBlur={handleBlur("workInfo.company.value")}
+          placeholder="CaptureMaster Studios"
         />
       </Stack>
       <Stack>
@@ -57,6 +59,7 @@ export default function WorkInfoForm() {
                           containerStyle={{
                             width: index === 0 ? "100%" : "90%",
                           }}
+                          placeholder="Status..."
                         />
                         {index > 0 && (
                           <FontAwesome

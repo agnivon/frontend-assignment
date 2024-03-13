@@ -5,7 +5,10 @@ export default function RNEInput(props: InputProps) {
   const { inputStyle, inputContainerStyle, containerStyle, ...rest } = props;
   return (
     <Input
-      inputStyle={[{ borderWidth: 1, margin: 0, borderRadius: 5 }, inputStyle]}
+      inputStyle={[
+        { borderWidth: 1, margin: 0, borderRadius: 5, paddingHorizontal: 5 },
+        inputStyle,
+      ]}
       inputContainerStyle={[
         { borderBottomWidth: 0, width: "100%" },
         inputContainerStyle,

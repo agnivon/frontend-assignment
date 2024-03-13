@@ -23,6 +23,7 @@ export default function HobbiesForm() {
           value={values.hobbies.value}
           onChangeText={handleChange("hobbies.hobbies.value")}
           onBlur={handleBlur("hobbies.hobbies.value")}
+          placeholder="Hiking and Nature Exploration"
         />
       </Stack>
       <Stack>
@@ -31,6 +32,7 @@ export default function HobbiesForm() {
           value={values.influencers.value}
           onChangeText={handleChange("hobbies.influencers.value")}
           onBlur={handleBlur("hobbies.influencers.value")}
+          placeholder="Steve McCurry"
         />
       </Stack>
       <Stack>
@@ -57,6 +59,7 @@ export default function HobbiesForm() {
                           containerStyle={{
                             width: index === 0 ? "100%" : "90%",
                           }}
+                          placeholder="Favorite..."
                         />
                         {index > 0 && (
                           <FontAwesome
